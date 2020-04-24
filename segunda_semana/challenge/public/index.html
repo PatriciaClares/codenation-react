@@ -12,32 +12,169 @@
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
-		<header class="header">
+		<header class="topbar">
 				<div class="container">
-					<a href="#"><img src="img/instagram-logo.svg" alt="Instagram"></a>
-					<button class="header-button"><i class="far fa-paper-plane"></i></button>
+					<a href="#" class="topbar__logo"><img src="img/instagram-logo.svg" alt="Instagram"></a>
+					<button class="topbar__icon"><i class="far fa-paper-plane"></i></button>
 				</div>
-			</nav>
 		</header>
 
 		<div class="container">
-			<a href="#"><img src="./img/profiles/gamora/gamora-3.jpg" alt="gamora"></a>
-			<a id="actived" href="#"><img src="./img/profiles/yoda/yoda-3.jpg" alt="yoda"></a>
-			<a href="#"><img src="./img/profiles/domino/domino-3.jpg" alt="domino"></a>
-			<a href="#"><img src="./img/profiles/carol/carol-3.jpg" alt="carol"></a>
-			<a href="#"><img src="./img/profiles/bruce/bruce-3.jpg" alt="bruce"></a>
-			<a href="#"><img src="./img/profiles/black-panther/black-panther-3.jpg" alt="black-panther"></a>
+			<section class="stories">
+				<div class="stories__container">
+					<a href="#" class="user__thumb">
+						<span class="user__thumb__wrapper"> 
+							<img src="./img/profiles/gamora/gamora-3.jpg" alt="gamora">
+						</span>
+					</a>
+					<a href="#" class="user__thumb">
+						<span class="user__thumb__wrapper">
+							<img src="./img/profiles/yoda/yoda-3.jpg" alt="yoda">
+						</span>
+					</a>
+					<a href="#" class="user__thumb">
+						<span class="user__thumb__wrapper">
+							<img src="./img/profiles/black-panther/black-panther-3.jpg" alt="black-panther">
+						</span>
+					</a>
+					<a href="#" class="user__thumb user__thumb--hasNew">
+						<span class="user__thumb__wrapper">
+							<img src="./img/profiles/domino/domino-3.jpg" alt="domino">
+						</span>
+					</a>
+					<a href="#" class="user__thumb">
+						<span class="user__thumb__wrapper">
+							<img src="./img/profiles/carol/carol-3.jpg" alt="carol">
+						</span>
+					</a>
+					<a href="#" class="user__thumb">
+						<span class="user__thumb__wrapper">
+							<img src="./img/profiles/bruce/bruce-3.jpg" alt="bruce">
+						</span>
+					</a>
+				</div>
+			</section>
 		</div>
 
 		<div class="container">
 			<section class="feed">
 				<article class="post">
-					<header class="post-header">
+					<header class="post__header">
 						<div class="user">
-							<a class="user-thumb" href="#"><img src="./img/profiles/yoda/yoda-3.jpg" alt="yoda"></a>
-							<a class="user-name" href="#">Mestre Yoda</a>
+							<a class="user__thumb" href="#"><img src="./img/profiles/yoda/yoda-3.jpg" alt="yoda"></a>
+							<a class="user__name" href="#">Mestre Yoda</a>
 						</div>
+
+						<button class="post__context">
+							<i class="fas fa-ellipsis-h"></i>
+						</button>
 					</header>
+					<figure class="post__figure">
+						<img src="./img/profiles/yoda/yoda-2.jpg" alt="yoda">
+					</figure>
+					<nav class="post__controls">
+						<button class="post__control"><i class="far fa-heart"></i></button>
+						<button class="post__control"><i class="far fa-comment"></i></button>
+						<button class="post__control"><i class="far fa-bookmark"></i></button>
+					</nav>
+					<div class="post__status">
+						<div class="user">
+							<a class="user__thumb" href="#"><img src="./img/profiles/domino/domino-3.jpg" alt="domino"></a>
+						</div>
+						<span>
+							Curtido por <a href="#">Domino</a> e outras <a href="#">7 pessoas</a>
+						</span>
+					</div>
+				</article>
+			</section>
+			<section class="feed">
+				<article class="post">
+					<header class="post__header">
+						<div class="user">
+							<a class="user__thumb" href="#"><img src="./img/profiles//gamora/gamora-3.jpg" alt="gamora"></a>
+							<a class="user__name" href="#">Gamora</a>
+						</div>
+
+						<button class="post__context">
+							<i class="fas fa-ellipsis-h"></i>
+						</button>
+					</header>
+					<figure class="post__figure">
+						<img src="./img/profiles/gamora/gamora-1.jpg" alt="yoda">
+					</figure>
+					<nav class="post__controls">
+						<button class="post__control"><i class="far fa-heart"></i></button>
+						<button class="post__control"><i class="far fa-comment"></i></button>
+						<button class="post__control"><i class="far fa-bookmark"></i></button>
+					</nav>
+					<div class="post__status">
+						<div class="user">
+							<a class="user__thumb" href="#"><img src="./img/profiles/domino/domino-3.jpg" alt="domino"></a>
+						</div>
+						<span>
+							Curtido por <a href="#">Domino</a> e outras <a href="#">7 pessoas</a>
+						</span>
+					</div>
+				</article>
+			</section>
+			<section class="feed">
+				<article class="post">
+					<header class="post__header">
+						<div class="user">
+							<a class="user__thumb" href="#"><img src="./img/profiles/carol/carol-3.jpg" alt="carol"></a>
+							<a class="user__name" href="#">Carol</a>
+						</div>
+
+						<button class="post__context">
+							<i class="fas fa-ellipsis-h"></i>
+						</button>
+					</header>
+					<figure class="post__figure">
+						<img src="./img/profiles/carol/carol-1.jpg" alt="carol">
+					</figure>
+					<nav class="post__controls">
+						<button class="post__control"><i class="far fa-heart"></i></button>
+						<button class="post__control"><i class="far fa-comment"></i></button>
+						<button class="post__control"><i class="far fa-bookmark"></i></button>
+					</nav>
+					<div class="post__status">
+						<div class="user">
+							<a class="user__thumb" href="#"><img src="./img/profiles/yoda/yoda-3.jpg" alt="yoda"></a>
+						</div>
+						<span>
+							Curtido por <a href="#">Yoda</a> e outras <a href="#">7 pessoas</a>
+						</span>
+					</div>
+				</article>
+			</section>
+			<section class="feed">
+				<article class="post">
+					<header class="post__header">
+						<div class="user">
+							<a class="user__thumb" href="#"><img src="./img/profiles/black-panther/black-panther-3.jpg" alt="black-panther"></a>
+							<a class="user__name" href="#">Black Phanter</a>
+						</div>
+
+						<button class="post__context">
+							<i class="fas fa-ellipsis-h"></i>
+						</button>
+					</header>
+					<figure class="post__figure">
+						<img src="./img/profiles/black-panther/black-panther-1.jpg" alt="black-panther">
+					</figure>
+					<nav class="post__controls">
+						<button class="post__control"><i class="far fa-heart"></i></button>
+						<button class="post__control"><i class="far fa-comment"></i></button>
+						<button class="post__control"><i class="far fa-bookmark"></i></button>
+					</nav>
+					<div class="post__status">
+						<div class="user">
+							<a class="user__thumb" href="#"><img src="./img/profiles/bruce/bruce-3.jpg" alt="bruce"></a>
+						</div>
+						<span>
+							Curtido por <a href="#">Bruce</a> e outras <a href="#">7 pessoas</a>
+						</span>
+					</div>
 				</article>
 			</section>
 		</div>
