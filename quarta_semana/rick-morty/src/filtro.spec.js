@@ -37,6 +37,7 @@ describe("Filtro", () => {
         it('retorna somente Rick Morty para o episódio 1', () => {
             const response = filtro.filterByEpisode(data.results, '1')
             expect(response.length).toBe(2)
+		console.log(response)
             expect(response[1].name).toBe('Morty Smith')
         })
 

@@ -16,7 +16,7 @@ const generateEpisodeList = (character) => {
 }
 
 const mapCharacterToEpisodes = (episodes, character) => {
-    const characterEpisodes = generateEpisodeList(character);
+    const characterEpisodes = generateEpisodeList(character); // exemplo: [10, 14, 20, 30]
     let newEpisodes = { ...episodes};
     characterEpisodes.map(episode => {
         if(newEpisodes[episode]) {
@@ -33,11 +33,14 @@ const mapCharacterToEpisodes = (episodes, character) => {
 }
 
 const filterByEpisode = (personagens, episode) => {
+    // Primeiro parametro é o acumulador, para cada objeto que ele pecorrer, ele soma +1
+    // Segundo parametro é cada item de personsagens
     const episodios = personagens.reduce((episodes, character) => {
         return mapCharacterToEpisodes(episodes, character);
     }, {});
     return episodios[episode]
 }
+
 module.exports = {
     filterByStatus,
     filterByGenrer,
